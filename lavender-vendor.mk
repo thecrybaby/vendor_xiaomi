@@ -67,6 +67,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/lavender/proprietary/lib/fm_helium.so:system/lib/fm_helium.so \
     vendor/xiaomi/lavender/proprietary/lib/libFileMux.so:system/lib/libFileMux.so \
     vendor/xiaomi/lavender/proprietary/lib/libOmxMux.so:system/lib/libOmxMux.so \
+    vendor/xiaomi/lavender/proprietary/lib64/libaptXHD_encoder.so:system/lib64/libaptXHD_encoder.so \
+    vendor/xiaomi/lavender/proprietary/lib64/libaptX_encoder.so:system/lib64/libaptX_encoder.so \
     vendor/xiaomi/lavender/proprietary/lib/libfm-hci.so:system/lib/libfm-hci.so \
     vendor/xiaomi/lavender/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
     vendor/xiaomi/lavender/proprietary/lib/libmmparser_lite.so:system/lib/libmmparser_lite.so \
