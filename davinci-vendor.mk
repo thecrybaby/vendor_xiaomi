@@ -19,12 +19,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/davinci
 
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/davinci/proprietary/bin/charger:$(TARGET_COPY_OUT_SYSTEM)/bin/charger \
     vendor/xiaomi/davinci/proprietary/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM)/bin/wfdservice \
-    vendor/xiaomi/davinci/proprietary/etc/cne/Nexus/ATT/ATT_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/ATT/ATT_profiles.xml \
-    vendor/xiaomi/davinci/proprietary/etc/cne/Nexus/ROW/ROW_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/ROW/ROW_profiles.xml \
-    vendor/xiaomi/davinci/proprietary/etc/cne/Nexus/VZW/VZW_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/VZW/VZW_profiles.xml \
-    vendor/xiaomi/davinci/proprietary/etc/excluded-input-devices.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/excluded-input-devices.xml \
     vendor/xiaomi/davinci/proprietary/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/wfdservice.rc \
     vendor/xiaomi/davinci/proprietary/etc/permissions/com.qti.location.sdk.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qti.location.sdk.xml \
     vendor/xiaomi/davinci/proprietary/etc/permissions/com.qualcomm.location.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qualcomm.location.xml \
@@ -42,13 +37,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/davinci/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
     vendor/xiaomi/davinci/proprietary/lib/fm_helium.so:$(TARGET_COPY_OUT_SYSTEM)/lib/fm_helium.so \
     vendor/xiaomi/davinci/proprietary/lib/libFileMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libFileMux.so \
-    vendor/xiaomi/davinci/proprietary/lib/libdiag_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libdiag_system.so \
     vendor/xiaomi/davinci/proprietary/lib/libfm-hci.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libfm-hci.so \
     vendor/xiaomi/davinci/proprietary/lib/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmosal.so \
     vendor/xiaomi/davinci/proprietary/lib/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmparser_lite.so \
     vendor/xiaomi/davinci/proprietary/lib/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmrtpdecoder.so \
     vendor/xiaomi/davinci/proprietary/lib/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmrtpencoder.so \
-    vendor/xiaomi/davinci/proprietary/lib/libstagefright_softomx.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libstagefright_softomx.so \
     vendor/xiaomi/davinci/proprietary/lib/libwfdaac.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdaac.so \
     vendor/xiaomi/davinci/proprietary/lib/libwfdavenhancements.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdavenhancements.so \
     vendor/xiaomi/davinci/proprietary/lib/libwfdclient.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdclient.so \
@@ -124,14 +117,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/davinci/proprietary/product/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar \
     vendor/xiaomi/davinci/proprietary/product/framework/vendor.qti.ims.callinfo-V1.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.ims.callinfo-V1.0-java.jar \
     vendor/xiaomi/davinci/proprietary/product/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar \
-    vendor/xiaomi/davinci/proprietary/product/lib/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.dpm.api@1.0.so \
-    vendor/xiaomi/davinci/proprietary/product/lib/libdpmctmgr.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libdpmctmgr.so \
-    vendor/xiaomi/davinci/proprietary/product/lib/libdpmfdmgr.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libdpmfdmgr.so \
-    vendor/xiaomi/davinci/proprietary/product/lib/libdpmframework.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libdpmframework.so \
-    vendor/xiaomi/davinci/proprietary/product/lib/libdpmtcm.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libdpmtcm.so \
     vendor/xiaomi/davinci/proprietary/product/lib/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.fm@1.0.so \
-    vendor/xiaomi/davinci/proprietary/product/lib/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.iop@2.0.so \
-    vendor/xiaomi/davinci/proprietary/product/lib/vendor.qti.hardware.perf@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.perf@2.0.so \
     vendor/xiaomi/davinci/proprietary/product/lib/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.wifidisplaysession@1.0.so \
     vendor/xiaomi/davinci/proprietary/product/lib64/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/xiaomi/davinci/proprietary/product/lib64/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.imscmservice@1.0.so \
@@ -140,11 +126,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/davinci/proprietary/product/lib64/com.qualcomm.qti.imscmservice@2.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.imscmservice@2.2.so \
     vendor/xiaomi/davinci/proprietary/product/lib64/com.qualcomm.qti.uceservice@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.uceservice@2.0.so \
     vendor/xiaomi/davinci/proprietary/product/lib64/com.qualcomm.qti.uceservice@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.uceservice@2.1.so \
-    vendor/xiaomi/davinci/proprietary/product/lib64/com.quicinc.cne.api@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.quicinc.cne.api@1.0.so \
-    vendor/xiaomi/davinci/proprietary/product/lib64/com.quicinc.cne.api@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.quicinc.cne.api@1.1.so \
-    vendor/xiaomi/davinci/proprietary/product/lib64/com.quicinc.cne.constants@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.quicinc.cne.constants@1.0.so \
-    vendor/xiaomi/davinci/proprietary/product/lib64/com.quicinc.cne.constants@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.quicinc.cne.constants@2.0.so \
-    vendor/xiaomi/davinci/proprietary/product/lib64/com.quicinc.cne.constants@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.quicinc.cne.constants@2.1.so \
     vendor/xiaomi/davinci/proprietary/product/lib64/lib-imsvideocodec.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imsvideocodec.so \
     vendor/xiaomi/davinci/proprietary/product/lib64/lib-imsvt.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imsvt.so \
     vendor/xiaomi/davinci/proprietary/product/lib64/lib-imsvtextutils.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imsvtextutils.so \
@@ -157,11 +138,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/davinci/proprietary/product/lib64/libdpmtcm.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libdpmtcm.so \
     vendor/xiaomi/davinci/proprietary/product/lib64/libimscamera_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libimscamera_jni.so \
     vendor/xiaomi/davinci/proprietary/product/lib64/libimsmedia_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libimsmedia_jni.so \
-    vendor/xiaomi/davinci/proprietary/product/lib64/libsdm-disp-apis.qti.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsdm-disp-apis.qti.so \
-    vendor/xiaomi/davinci/proprietary/product/lib64/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.color@1.0.so \
-    vendor/xiaomi/davinci/proprietary/product/lib64/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.color@1.1.so \
-    vendor/xiaomi/davinci/proprietary/product/lib64/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.color@1.2.so \
-    vendor/xiaomi/davinci/proprietary/product/lib64/vendor.display.color@1.3.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.color@1.3.so \
     vendor/xiaomi/davinci/proprietary/product/lib64/vendor.qti.gnss@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.gnss@1.0.so \
     vendor/xiaomi/davinci/proprietary/product/lib64/vendor.qti.gnss@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.gnss@1.1.so \
     vendor/xiaomi/davinci/proprietary/product/lib64/vendor.qti.gnss@1.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.gnss@1.2.so \
@@ -177,8 +153,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/davinci/proprietary/product/lib64/vendor.qti.hardware.data.iwlan@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.data.iwlan@1.0.so \
     vendor/xiaomi/davinci/proprietary/product/lib64/vendor.qti.hardware.data.qmi@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.data.qmi@1.0.so \
     vendor/xiaomi/davinci/proprietary/product/lib64/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.fm@1.0.so \
-    vendor/xiaomi/davinci/proprietary/product/lib64/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.iop@2.0.so \
-    vendor/xiaomi/davinci/proprietary/product/lib64/vendor.qti.hardware.perf@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.perf@2.0.so \
     vendor/xiaomi/davinci/proprietary/product/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so \
     vendor/xiaomi/davinci/proprietary/product/lib64/vendor.qti.ims.callinfo@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.ims.callinfo@1.0.so \
     vendor/xiaomi/davinci/proprietary/product/lib64/vendor.qti.ims.rcsconfig@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.ims.rcsconfig@1.0.so \
@@ -196,51 +170,17 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/davinci/proprietary/product/media/audio/ui/popup_muqin_up.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/popup_muqin_up.ogg \
     vendor/xiaomi/davinci/proprietary/product/media/audio/ui/popup_yingyan_down.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/popup_yingyan_down.ogg \
     vendor/xiaomi/davinci/proprietary/product/media/audio/ui/popup_yingyan_up.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/popup_yingyan_up.ogg \
-    vendor/xiaomi/davinci/proprietary/product/vendor_overlay/29/lib/hw/camera.qcom.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib/hw/camera.qcom.so \
-    vendor/xiaomi/davinci/proprietary/lib/modules/audio_adsp_loader.ko:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/audio_adsp_loader.ko \
-    vendor/xiaomi/davinci/proprietary/lib/modules/audio_apr.ko:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/audio_apr.ko \
-    vendor/xiaomi/davinci/proprietary/lib/modules/audio_bolero_cdc.ko:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/audio_bolero_cdc.ko \
-    vendor/xiaomi/davinci/proprietary/lib/modules/audio_hdmi.ko:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/audio_hdmi.ko \
-    vendor/xiaomi/davinci/proprietary/lib/modules/audio_machine_talos.ko:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/audio_machine_talos.ko \
-    vendor/xiaomi/davinci/proprietary/lib/modules/audio_mbhc.ko:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/audio_mbhc.ko \
-    vendor/xiaomi/davinci/proprietary/lib/modules/audio_native.ko:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/audio_native.ko \
-    vendor/xiaomi/davinci/proprietary/lib/modules/audio_pinctrl_lpi.ko:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/audio_pinctrl_lpi.ko \
-    vendor/xiaomi/davinci/proprietary/lib/modules/audio_pinctrl_wcd.ko:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/audio_pinctrl_wcd.ko \
-    vendor/xiaomi/davinci/proprietary/lib/modules/audio_platform.ko:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/audio_platform.ko \
-    vendor/xiaomi/davinci/proprietary/lib/modules/audio_q6.ko:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/audio_q6.ko \
-    vendor/xiaomi/davinci/proprietary/lib/modules/audio_q6_notifier.ko:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/audio_q6_notifier.ko \
-    vendor/xiaomi/davinci/proprietary/lib/modules/audio_q6_pdr.ko:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/audio_q6_pdr.ko \
-    vendor/xiaomi/davinci/proprietary/lib/modules/audio_rx_macro.ko:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/audio_rx_macro.ko \
-    vendor/xiaomi/davinci/proprietary/lib/modules/audio_snd_event.ko:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/audio_snd_event.ko \
-    vendor/xiaomi/davinci/proprietary/lib/modules/audio_stub.ko:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/audio_stub.ko \
-    vendor/xiaomi/davinci/proprietary/lib/modules/audio_swr.ko:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/audio_swr.ko \
-    vendor/xiaomi/davinci/proprietary/lib/modules/audio_swr_ctrl.ko:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/audio_swr_ctrl.ko \
-    vendor/xiaomi/davinci/proprietary/lib/modules/audio_tfa98xx.ko:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/audio_tfa98xx.ko \
-    vendor/xiaomi/davinci/proprietary/lib/modules/audio_tx_macro.ko:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/audio_tx_macro.ko \
-    vendor/xiaomi/davinci/proprietary/lib/modules/audio_usf.ko:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/audio_usf.ko \
-    vendor/xiaomi/davinci/proprietary/lib/modules/audio_va_macro.ko:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/audio_va_macro.ko \
-    vendor/xiaomi/davinci/proprietary/lib/modules/audio_wcd934x.ko:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/audio_wcd934x.ko \
-    vendor/xiaomi/davinci/proprietary/lib/modules/audio_wcd937x.ko:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/audio_wcd937x.ko \
-    vendor/xiaomi/davinci/proprietary/lib/modules/audio_wcd937x_slave.ko:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/audio_wcd937x_slave.ko \
-    vendor/xiaomi/davinci/proprietary/lib/modules/audio_wcd9xxx.ko:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/audio_wcd9xxx.ko \
-    vendor/xiaomi/davinci/proprietary/lib/modules/audio_wcd_core.ko:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/audio_wcd_core.ko \
-    vendor/xiaomi/davinci/proprietary/lib/modules/audio_wcd_spi.ko:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/audio_wcd_spi.ko \
-    vendor/xiaomi/davinci/proprietary/lib/modules/audio_wglink.ko:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/audio_wglink.ko \
-    vendor/xiaomi/davinci/proprietary/lib/modules/audio_wsa881x.ko:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/audio_wsa881x.ko \
-    vendor/xiaomi/davinci/proprietary/lib/modules/audio_wsa_macro.ko:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/audio_wsa_macro.ko \
-    vendor/xiaomi/davinci/proprietary/lib/modules/exfat.ko:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/exfat.ko \
-    vendor/xiaomi/davinci/proprietary/lib/modules/modules.alias:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/modules.alias \
-    vendor/xiaomi/davinci/proprietary/lib/modules/modules.dep:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/modules.dep \
-    vendor/xiaomi/davinci/proprietary/lib/modules/mpq-adapter.ko:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/mpq-adapter.ko \
-    vendor/xiaomi/davinci/proprietary/lib/modules/mpq-dmx-hw-plugin.ko:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/mpq-dmx-hw-plugin.ko \
-    vendor/xiaomi/davinci/proprietary/lib/modules/msm_11ad_proxy.ko:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/msm_11ad_proxy.ko \
-    vendor/xiaomi/davinci/proprietary/lib/modules/qca_cld3_wlan.ko:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/qca_cld3_wlan.ko \
-    vendor/xiaomi/davinci/proprietary/lib/modules/wil6210.ko:$(TARGET_COPY_OUT_SYSTEM)/lib/modules/wil6210.ko \
+    vendor/xiaomi/davinci/proprietary/product/vendor_overlay/29/lib/modules/exfat.ko:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib/modules/exfat.ko \
     vendor/xiaomi/davinci/proprietary/product/vendor_overlay/29/lib/soundfx/libvolumelistener.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib/soundfx/libvolumelistener.so \
     vendor/xiaomi/davinci/proprietary/product/vendor_overlay/29/lib64/hw/camera.qcom.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib64/hw/camera.qcom.so \
     vendor/xiaomi/davinci/proprietary/product/vendor_overlay/29/lib64/soundfx/libvolumelistener.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib64/soundfx/libvolumelistener.so
 
 PRODUCT_PACKAGES += \
+    com.quicinc.cne.api@1.0 \
+    com.quicinc.cne.api@1.1 \
+    com.quicinc.cne.constants@1.0 \
+    com.quicinc.cne.constants@2.0 \
+    com.quicinc.cne.constants@2.1 \
     SoterService \
     WfdService \
     com.qualcomm.location \
