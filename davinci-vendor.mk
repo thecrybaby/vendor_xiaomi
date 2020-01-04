@@ -1,5 +1,5 @@
-# Copyright (C) 2019 The LineageOS Project
-# Copyright (C) 2019 The PixelExperience Project
+# Copyright (C) 2019-2020 The LineageOS Project
+# Copyright (C) 2019-2020 The PixelExperience Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -75,6 +75,18 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/davinci/proprietary/lib64/libwfduibcsinkinterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfduibcsinkinterface.so \
     vendor/xiaomi/davinci/proprietary/lib64/libwfduibcsrc.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfduibcsrc.so \
     vendor/xiaomi/davinci/proprietary/lib64/libwfduibcsrcinterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfduibcsrcinterface.so \
+    vendor/xiaomi/davinci/proprietary/product/media/audio/ui/popup_cangmen_down.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/popup_cangmen_down.ogg \
+    vendor/xiaomi/davinci/proprietary/product/media/audio/ui/popup_cangmen_up.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/popup_cangmen_up.ogg \
+    vendor/xiaomi/davinci/proprietary/product/media/audio/ui/popup_chilun_down.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/popup_chilun_down.ogg \
+    vendor/xiaomi/davinci/proprietary/product/media/audio/ui/popup_chilun_up.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/popup_chilun_up.ogg \
+    vendor/xiaomi/davinci/proprietary/product/media/audio/ui/popup_jijia_down.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/popup_jijia_down.ogg \
+    vendor/xiaomi/davinci/proprietary/product/media/audio/ui/popup_jijia_up.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/popup_jijia_up.ogg \
+    vendor/xiaomi/davinci/proprietary/product/media/audio/ui/popup_mofa_down.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/popup_mofa_down.ogg \
+    vendor/xiaomi/davinci/proprietary/product/media/audio/ui/popup_mofa_up.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/popup_mofa_up.ogg \
+    vendor/xiaomi/davinci/proprietary/product/media/audio/ui/popup_muqin_down.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/popup_muqin_down.ogg \
+    vendor/xiaomi/davinci/proprietary/product/media/audio/ui/popup_muqin_up.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/popup_muqin_up.ogg \
+    vendor/xiaomi/davinci/proprietary/product/media/audio/ui/popup_yingyan_down.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/popup_yingyan_down.ogg \
+    vendor/xiaomi/davinci/proprietary/product/media/audio/ui/popup_yingyan_up.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/popup_yingyan_up.ogg \
     vendor/xiaomi/davinci/proprietary/product/bin/dpmd:$(TARGET_COPY_OUT_PRODUCT)/bin/dpmd \
     vendor/xiaomi/davinci/proprietary/product/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_PRODUCT)/etc/dpm/dpm.conf \
     vendor/xiaomi/davinci/proprietary/product/etc/init/dpmd.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/dpmd.rc \
@@ -137,6 +149,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/davinci/proprietary/product/lib64/libdpmtcm.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libdpmtcm.so \
     vendor/xiaomi/davinci/proprietary/product/lib64/libimscamera_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libimscamera_jni.so \
     vendor/xiaomi/davinci/proprietary/product/lib64/libimsmedia_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libimsmedia_jni.so \
+    vendor/xiaomi/davinci/proprietary/product/lib64/libsdm-disp-apis.qti.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsdm-disp-apis.qti.so \
+    vendor/xiaomi/davinci/proprietary/product/lib64/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.color@1.0.so \
     vendor/xiaomi/davinci/proprietary/product/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so \
     vendor/xiaomi/davinci/proprietary/product/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so \
     vendor/xiaomi/davinci/proprietary/product/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so \
@@ -153,18 +167,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/davinci/proprietary/product/lib64/vendor.qti.ims.rcsconfig@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.ims.rcsconfig@1.0.so \
     vendor/xiaomi/davinci/proprietary/product/lib64/vendor.qti.imsrtpservice@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.imsrtpservice@2.0.so \
     vendor/xiaomi/davinci/proprietary/product/lib64/vendor.qti.imsrtpservice@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.imsrtpservice@2.1.so \
-    vendor/xiaomi/davinci/proprietary/product/media/audio/ui/popup_cangmen_down.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/popup_cangmen_down.ogg \
-    vendor/xiaomi/davinci/proprietary/product/media/audio/ui/popup_cangmen_up.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/popup_cangmen_up.ogg \
-    vendor/xiaomi/davinci/proprietary/product/media/audio/ui/popup_chilun_down.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/popup_chilun_down.ogg \
-    vendor/xiaomi/davinci/proprietary/product/media/audio/ui/popup_chilun_up.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/popup_chilun_up.ogg \
-    vendor/xiaomi/davinci/proprietary/product/media/audio/ui/popup_jijia_down.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/popup_jijia_down.ogg \
-    vendor/xiaomi/davinci/proprietary/product/media/audio/ui/popup_jijia_up.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/popup_jijia_up.ogg \
-    vendor/xiaomi/davinci/proprietary/product/media/audio/ui/popup_mofa_down.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/popup_mofa_down.ogg \
-    vendor/xiaomi/davinci/proprietary/product/media/audio/ui/popup_mofa_up.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/popup_mofa_up.ogg \
-    vendor/xiaomi/davinci/proprietary/product/media/audio/ui/popup_muqin_down.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/popup_muqin_down.ogg \
-    vendor/xiaomi/davinci/proprietary/product/media/audio/ui/popup_muqin_up.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/popup_muqin_up.ogg \
-    vendor/xiaomi/davinci/proprietary/product/media/audio/ui/popup_yingyan_down.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/popup_yingyan_down.ogg \
-    vendor/xiaomi/davinci/proprietary/product/media/audio/ui/popup_yingyan_up.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/popup_yingyan_up.ogg \
+    vendor/xiaomi/davinci/proprietary/product/vendor_overlay/29/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/bin/hw/vendor.display.color@1.0-service \
     vendor/xiaomi/davinci/proprietary/product/vendor_overlay/29/lib/liboemcrypto.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib/liboemcrypto.so \
     vendor/xiaomi/davinci/proprietary/product/vendor_overlay/29/lib/modules/exfat.ko:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib/modules/exfat.ko \
     vendor/xiaomi/davinci/proprietary/product/vendor_overlay/29/lib/soundfx/libvolumelistener.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib/soundfx/libvolumelistener.so \
