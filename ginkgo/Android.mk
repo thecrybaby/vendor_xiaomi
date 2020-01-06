@@ -17,6 +17,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),ginkgo)
+ifneq ($(filter ginkgo willow,$(TARGET_DEVICE)),)
 
 endif
