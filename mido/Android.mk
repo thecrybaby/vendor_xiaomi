@@ -17,7 +17,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter mido tissot,$(TARGET_DEVICE)),)
+ifeq ($(TARGET_DEVICE),mido)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := chargeonlymode
