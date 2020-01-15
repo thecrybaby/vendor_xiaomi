@@ -32,3 +32,15 @@ dex_import {
     owner: "xiaomi",
     jars: ["proprietary/framework/UxPerformance.jar"],
 }
+
+prebuilt_etc {
+    name: "com.qualcomm.qti.Performance.xml",
+    src: "proprietary/etc/permissions/com.qualcomm.qti.Performance.xml",
+    sub_dir: "permissions",
+}
+
+prebuilt_etc {
+    name: "com.qualcomm.qti.UxPerformance.xml",
+    src: "proprietary/etc/permissions/com.qualcomm.qti.UxPerformance.xml",
+    sub_dir: "permissions",
+}
