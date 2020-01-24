@@ -1,6 +1,5 @@
 /**
  * Copyright (C) 2019-2020 The LineageOS Project
- * Copyright (C) 2019-2020 The PixelExperience Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,6 +17,43 @@
  */
 
 soong_namespace {
+}
+
+cc_prebuilt_library_shared {
+	name: "libbtconfigstore",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/lib/libbtconfigstore.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/lib64/libbtconfigstore.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libgpustats",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libgpustats.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libgpustats.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -90,6 +126,22 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
+cc_prebuilt_library_shared {
+	name: "libloc_api_v02",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libloc_api_v02.so"],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	soc_specific: true,
+}
+
 android_app_import {
 	name: "QtiTelephonyService",
 	owner: "xiaomi",
@@ -98,17 +150,6 @@ android_app_import {
 	dex_preopt: {
 		enabled: false,
 	},
-}
-
-android_app_import {
-	name: "CNEService",
-	owner: "xiaomi",
-	apk: "proprietary/priv-app/CNEService/CNEService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
 }
 
 android_app_import {
@@ -123,20 +164,20 @@ android_app_import {
 }
 
 android_app_import {
-	name: "qcrilmsgtunnel",
+	name: "CneApp",
 	owner: "xiaomi",
-	apk: "proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
+	apk: "proprietary/vendor/app/CneApp/CneApp.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	privileged: true,
+	soc_specific: true,
 }
 
 android_app_import {
-	name: "PowerOffAlarm",
+	name: "IWlanService",
 	owner: "xiaomi",
-	apk: "proprietary/vendor/app/PowerOffAlarm/PowerOffAlarm.apk",
+	apk: "proprietary/vendor/app/IWlanService/IWlanService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -148,11 +189,34 @@ android_app_import {
 	name: "TimeService",
 	owner: "xiaomi",
 	apk: "proprietary/vendor/app/TimeService/TimeService.apk",
-	certificate: "platform",
+	certificate: ":timeservice_app_cert-legacy-um",
 	dex_preopt: {
 		enabled: false,
 	},
 	soc_specific: true,
+}
+
+android_app_import {
+	name: "PowerOffAlarm",
+	owner: "xiaomi",
+	apk: "proprietary/product/app/PowerOffAlarm/PowerOffAlarm.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "dpmserviceapp",
+	owner: "xiaomi",
+	apk: "proprietary/product/priv-app/dpmserviceapp/dpmserviceapp.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
 }
 
 android_app_import {
@@ -167,9 +231,28 @@ android_app_import {
 	product_specific: true,
 }
 
+android_app_import {
+	name: "qcrilmsgtunnel",
+	owner: "xiaomi",
+	apk: "proprietary/product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
 dex_import {
 	name: "WfdCommon",
 	owner: "xiaomi",
 	jars: ["proprietary/framework/WfdCommon.jar"],
+}
+
+cc_prebuilt_binary {
+	name: "chargeonlymode",
+	owner: "xiaomi",
+	srcs: ["proprietary/bin/chargeonlymode"],
+	prefer: true,
 }
 
